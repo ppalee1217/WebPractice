@@ -1,0 +1,517 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+div {
+  display: flex;
+}
+
+img {
+  vertical-align: top;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+div.left1 {
+  top: 434px;
+  position: absolute;
+  display: table-cell;
+  left: 6.67%;
+}
+
+div.right1 {
+  position: absolute;
+  top: 256px;
+  left: 33.23%;
+}
+
+div.left2 {
+  top: 434px;
+  position: absolute;
+  display: table-cell;
+  left: 6.67%;
+}
+
+div.right2 {
+  position: absolute;
+  top: 256px;
+  left: 33.23%;
+}
+
+div.left3 {
+  top: 434px;
+  position: absolute;
+  display: table-cell;
+  left: 6.67%;
+}
+
+div.right3 {
+  position: absolute;
+  top: 256px;
+  left: 33.23%;
+}
+
+div.left4 {
+  top: 434px;
+  position: absolute;
+  display: table-cell;
+  left: 6.67%;
+}
+
+div.right4 {
+  position: absolute;
+  top: 256px;
+  left: 33.23%;
+}
+
+div.left5 {
+  top: 434px;
+  position: absolute;
+  display: table-cell;
+  left: 6.67%;
+}
+
+div.right5 {
+  position: absolute;
+  top: 256px;
+  left: 33.23%;
+}
+
+div.navbar {
+  font-size: 0;
+  position: absolute;
+  display: inline-block;
+  min-width: 100%;
+}
+
+.navleft {
+  position: absolute;
+  display: inline-block;
+  top: 36px;
+  bottom: 36px;
+  left: 3.54%;
+}
+
+.navright {
+  position: absolute;
+  top: 44px;
+  bottom: 36px;
+}
+
+#name {
+  left: 8.125%;
+}
+
+#product {
+  left: 49.69%;
+}
+
+#place {
+  left: 58.96%;
+}
+
+#inspiration {
+  left: 65.78%;
+}
+
+#new {
+  left: 79.17%;
+}
+
+#discount {
+  left: 85.93%;
+}
+
+#shoppingcart {
+  left: 93.59%;
+}
+
+.left1 #ceremony_ {
+  background-color: white;
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+.left1 #ceremony_:hover {
+  transform: scale(1.2, 1.2);
+  transition: all 0.6s ease;
+}
+
+.left1 #original {
+  display: block;
+  position: relative;
+  padding-top: 18px;
+}
+
+.left1 #light {
+  display: block;
+  position: relative;
+  padding-top: 18px;
+}
+
+.left1 #nightnight {
+  display: block;
+  position: relative;
+  padding-top: 18px;
+}
+
+.left1 #housework {
+  display: block;
+  position: relative;
+  padding-top: 18px;
+}
+
+.left2 #ceremony {
+  display: block;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.left2 #original_:hover {
+  transform: scale(1.2, 1.2);
+  transition: all 0.6s ease;
+}
+
+.left2 #original_ {
+  background-color: white;
+  z-index: 1;
+  display: block;
+  position: relative;
+  padding-top: 18px;
+}
+
+.left2 #light {
+  display: block;
+  position: relative;
+  padding-top: 18px;
+}
+
+.left2 #nightnight {
+  display: block;
+  position: relative;
+  padding-top: 18px;
+}
+
+.left2 #housework {
+  display: block;
+  position: relative;
+  padding-top: 18px;
+}
+
+.left3 #ceremony {
+  display: block;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.left3 #light_:hover {
+  transform: scale(1.2, 1.2);
+  transition: all 0.6s ease;
+}
+
+.left3 #original {
+  background-color: white;
+  z-index: 1;
+  display: block;
+  position: relative;
+  padding-top: 18px;
+}
+
+.left3 #light_ {
+  display: block;
+  position: relative;
+  padding-top: 18px;
+}
+
+.left3 #nightnight {
+  display: block;
+  position: relative;
+  padding-top: 18px;
+}
+
+.left3 #housework {
+  display: block;
+  position: relative;
+  padding-top: 18px;
+}
+
+.left4 #ceremony {
+  display: block;
+  position: relative;
+}
+
+.left4 #nightnight_:hover {
+  transform: scale(1.2, 1.2);
+  transition: all 0.6s ease;
+}
+
+.left4 #original {
+  display: block;
+  position: relative;
+  padding-top: 18px;
+}
+
+.left4 #light {
+  display: block;
+  position: relative;
+  padding-top: 18px;
+  padding-bottom: 12px;
+}
+
+.left4 #nightnight_ {
+  background-color: white;
+  z-index: 1;
+  display: block;
+  position: relative;
+  padding-top: 18px;
+}
+
+.left4 #housework {
+  display: block;
+  position: relative;
+  padding-top: 18px;
+}
+
+.left5 #ceremony {
+  display: block;
+  position: relative;
+}
+
+.left5 #housework_:hover {
+  transform: scale(1.2, 1.2);
+  transition: all 0.6s ease;
+}
+
+.left5 #original {
+  display: block;
+  position: relative;
+  padding-top: 18px;
+}
+
+.left5 #light {
+  display: block;
+  position: relative;
+  padding-top: 18px;
+}
+
+.left5 #nightnight {
+  display: block;
+  position: relative;
+  padding-top: 18px;
+  padding-bottom: 12px;
+}
+
+.left5 #housework_ {
+  background-color: white;
+  z-index: 1;
+  display: block;
+  position: relative;
+  padding-top: 18px;
+}
+
+#text {
+  display: block;
+  position: relative;
+  padding-top: 90px;
+}
+
+.scroll {
+  left: 96.75%;
+  position: absolute;
+  z-index: 1;
+}
+
+.right1 #scroll1 {
+  top: 279px;
+}
+
+.right1 #scroll2 {
+  top: 332px;
+}
+
+.right1 #scroll3 {
+  top: 350px;
+}
+
+.right1 #scroll4 {
+  top: 368px;
+}
+
+.right1 #scroll5 {
+  top: 386px;
+}
+
+.right2 #scroll1 {
+  top: 279px;
+}
+
+.right2 #scroll2 {
+  top: 297px;
+}
+
+.right2 #scroll3 {
+  top: 350px;
+}
+
+.right2 #scroll4 {
+  top: 368px;
+}
+
+.right2 #scroll5 {
+  top: 386px;
+}
+
+.right3 #scroll1 {
+  top: 279px;
+}
+
+.right3 #scroll2 {
+  top: 297px;
+}
+
+.right3 #scroll3 {
+  top: 315px;
+}
+
+.right3 #scroll4 {
+  top: 368px;
+}
+
+.right3 #scroll5 {
+  top: 386px;
+}
+
+.right4 #scroll1 {
+  top: 279px;
+}
+
+.right4 #scroll2 {
+  top: 297px;
+}
+
+.right4 #scroll3 {
+  top: 315px;
+}
+
+.right4 #scroll4 {
+  top: 333px;
+}
+
+.right4 #scroll5 {
+  top: 386px;
+}
+
+.right5 #scroll1 {
+  top: 279px;
+}
+
+.right5 #scroll2 {
+  top: 297px;
+}
+
+.right5 #scroll3 {
+  top: 315px;
+}
+
+.right5 #scroll4 {
+  top: 333px;
+}
+
+.right5 #scroll5 {
+  top: 351px;
+}
+
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {
+  opacity: 0.7;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 300px; /* Location of the box */
+  padding-left: 330px;
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(145, 143, 143, 0.108); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: 0px;
+  display: block;
+  width: 100%;
+  max-width: 80%;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content,
+#caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+
+.ui-dialog-titlebar-close {
+  visibility: hidden;
+}
