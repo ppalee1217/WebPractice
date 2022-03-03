@@ -5,6 +5,10 @@
           box-sizing: border-box;
 }
 
+.click {
+  cursor: pointer;
+}
+
 div {
   display: -webkit-box;
   display: -ms-flexbox;
