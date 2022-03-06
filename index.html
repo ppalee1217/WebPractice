@@ -2,9 +2,11 @@
 <html lang="zh-Hant">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width; initial-scale=1.0 ">
-            <title>C'est la vie</title>
-            <link rel="stylesheet" href="./style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+        <title>C'est la vie</title>
+        <link rel="stylesheet" href="./styles/style.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js">
+        </script>
     </head>
     <body>
         <nav class="navbar">
@@ -19,32 +21,138 @@
         </nav>
         <div>
             <main>
-                <div class="left1">
-                    <img id="ceremony_" class="click" src="./res/01/Group 51.png">
-                    <img id="original" src="./res/01/ORIGINAL.png">
-                    <img id="light" src="./res/01/LIGHT.png">
-                    <img id="nightnight" src="./res/01/NIGHTNIGHT.png">
-                    <img id="housework" src="./res/01/HOUSEWORK.png">
-                    <img id="text" src="./res/01/Close your eyes and feel the love, pain, and hope from your life. Feel the embrace, tenderness and inclusion of the world. If you are still breathing, if your heart is still beating vigorously, the next.png">
-                </div>
-                <div class="right1">
-                    <img id="photo" src="./res/01/Group 48.png">
-                    <img class="scroll" id="scroll1" src="./res/01/Rectangle 11.png">
-                    <img class="scroll" id="scroll2" src="./res/01/Ellipse 3.png">
-                    <img class="scroll" id="scroll3" src="./res/01/Ellipse 4.png">
-                    <img class="scroll" id="scroll4" src="./res/01/Ellipse 5.png">
-                    <img class="scroll" id="scroll5" src="./res/01/Ellipse 6.png">
-                </div>
-                <!-- The Modal -->
-                <div id="myModal" class="modal">
+                <section data-section="0" class="active">
+                    <div class="left" id="left1">
+                        <img id="ceremony_" class="click" src="./res/01/Group 51.png">
+                        <img id="original" src="./res/01/ORIGINAL.png">
+                        <img id="light" src="./res/01/LIGHT.png">
+                        <img id="nightnight" src="./res/01/NIGHTNIGHT.png">
+                        <img id="housework" src="./res/01/HOUSEWORK.png">
+                        <img id="text" src="./res/01/Close your eyes and feel the love, pain, and hope from your life. Feel the embrace, tenderness and inclusion of the world. If you are still breathing, if your heart is still beating vigorously, the next.png">
+                    </div>
+                    <div class="right1">
+                        <img id="photo" src="./res/01/Group 48.png">
+                        <img class="scroll" id="scroll1" src="./res/01/Rectangle 11.png">
+                        <img class="scroll" id="scroll2" src="./res/01/Ellipse 3.png">
+                        <img class="scroll" id="scroll3" src="./res/01/Ellipse 4.png">
+                        <img class="scroll" id="scroll4" src="./res/01/Ellipse 5.png">
+                        <img class="scroll" id="scroll5" src="./res/01/Ellipse 6.png">
+                    </div>
+                    <!-- The Modal -->
+                    <div id="myModal1" class="modal">
 
-                <!-- Modal content -->
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <img src="./res/01-1/Group 19.png">
-                </div>
+                    <!-- Modal content -->
+                    <div id="modal1-content" class="modal-content">
+                        <span class="close">&times;</span>
+                        <img src="./res/01-1/Group 19.png">
+                    </div>
+                </section>
+                <section data-section="1">
+                    <div class="left" id="left2">
+                        <img id="ceremony" src="./res/02/CEREMONY.png">
+                        <img id="original_" class="click" src="./res/02/Group 50.png">
+                        <img id="light" src="./res/01/LIGHT.png">
+                        <img id="nightnight" src="./res/01/NIGHTNIGHT.png">
+                        <img id="housework" src="./res/01/HOUSEWORK.png">
+                        <img id="text" src="./res/01/Close your eyes and feel the love, pain, and hope from your life. Feel the embrace, tenderness and inclusion of the world. If you are still breathing, if your heart is still beating vigorously, the next.png">
+                    </div>
+                    <div class="right2">
+                        <img id="photo" src="./res/02/Group 49.png">
+                        <img class="scroll" id="scroll1" src="./res/01/Ellipse 3.png">
+                        <img class="scroll" id="scroll2" src="./res/01/Rectangle 11.png">
+                        <img class="scroll" id="scroll3" src="./res/01/Ellipse 4.png">
+                        <img class="scroll" id="scroll4" src="./res/01/Ellipse 5.png">
+                        <img class="scroll" id="scroll5" src="./res/01/Ellipse 6.png">
+                    </div>
+                    <!-- The Modal -->
+                    <div id="myModal2" class="modal">
+    
+                    <!-- Modal content -->
+                    <div id="modal2-content" class="modal-content">
+                        <span class="close">&times;</span>
+                        <img src="./res/02-1/Group 39.png">
+                    </div>
+                </section>
+                <section data-section="2">
+                    <div class="left" id="left3">
+                        <img id="ceremony" src="./res/02/CEREMONY.png">
+                        <img id="original" src="./res/03/ORIGINAL.png">
+                        <img id="light_" class="click" src="./res/03/Group 52.png">
+                        <img id="nightnight" src="./res/01/NIGHTNIGHT.png">
+                        <img id="housework" src="./res/01/HOUSEWORK.png">
+                        <img id="text" src="./res/01/Close your eyes and feel the love, pain, and hope from your life. Feel the embrace, tenderness and inclusion of the world. If you are still breathing, if your heart is still beating vigorously, the next.png">
+                    </div>
+                    <div class="right3">
+                        <img id="photo" src="./res/03/Group 59.png">
+                        <img class="scroll" id="scroll1" src="./res/01/Ellipse 3.png">
+                        <img class="scroll" id="scroll2" src="./res/01/Ellipse 4.png">
+                        <img class="scroll" id="scroll3" src="./res/01/Rectangle 11.png">
+                        <img class="scroll" id="scroll4" src="./res/01/Ellipse 5.png">
+                        <img class="scroll" id="scroll5" src="./res/01/Ellipse 6.png">
+                    </div>
+                    <!-- The Modal -->
+                    <div id="myModal3" class="modal">
+    
+                    <!-- Modal content -->
+                    <div id="modal3-content" class="modal-content">
+                        <span class="close">&times;</span>
+                        <img src="./res/03-1/Group 46.png">
+                    </div>
+                </section>
+                <section data-section="3">
+                    <div class="left" id="left4">
+                        <img id="ceremony" src="./res/02/CEREMONY.png">
+                        <img id="original" src="./res/03/ORIGINAL.png">
+                        <img id="light" src="./res/04/LIGHT.png">
+                        <img id="nightnight_" class="click" src="./res/04/Group 53.png">
+                        <img id="housework" src="./res/01/HOUSEWORK.png">
+                        <img id="text" src="./res/01/Close your eyes and feel the love, pain, and hope from your life. Feel the embrace, tenderness and inclusion of the world. If you are still breathing, if your heart is still beating vigorously, the next.png">
+                    </div>
+                    <div class="right4">
+                        <img id="photo" src="./res/04/Group 60.png">
+                        <img class="scroll" id="scroll1" src="./res/01/Ellipse 3.png">
+                        <img class="scroll" id="scroll2" src="./res/01/Ellipse 4.png">
+                        <img class="scroll" id="scroll3" src="./res/01/Ellipse 5.png">
+                        <img class="scroll" id="scroll4" src="./res/01/Rectangle 11.png">
+                        <img class="scroll" id="scroll5" src="./res/01/Ellipse 6.png">
+                    </div>
+                    <!-- The Modal -->
+                    <div id="myModal4" class="modal">
+    
+                    <!-- Modal content -->
+                    <div id="modal4-content" class="modal-content">
+                        <span class="close">&times;</span>
+                        <img src="./res/04-1/Group 35.png">
+                    </div>
+                </section>
+                <section data-section="4">
+                    <div class="left" id="left5">
+                        <img id="ceremony" src="./res/05/CEREMONY.png">
+                        <img id="original" src="./res/01/ORIGINAL.png">
+                        <img id="light" src="./res/01/LIGHT.png">
+                        <img id="nightnight" src="./res/01/NIGHTNIGHT.png">
+                        <img id="housework_" class="click" src="./res/05/Group 54.png">
+                        <img id="text" src="./res/01/Close your eyes and feel the love, pain, and hope from your life. Feel the embrace, tenderness and inclusion of the world. If you are still breathing, if your heart is still beating vigorously, the next.png">
+                    </div>
+                    <div class="right5">
+                        <img id="photo" src="./res/05/Group 61.png">
+                        <img class="scroll" id="scroll1" src="./res/01/Ellipse 6.png">
+                        <img class="scroll" id="scroll2" src="./res/01/Ellipse 3.png">
+                        <img class="scroll" id="scroll3" src="./res/01/Ellipse 4.png">
+                        <img class="scroll" id="scroll4" src="./res/01/Ellipse 5.png">
+                        <img class="scroll" id="scroll5" src="./res/01/Rectangle 11.png">
+                    </div>
+                    <!-- The Modal -->
+                    <div id="myModal5" class="modal">
+    
+                    <!-- Modal content -->
+                    <div id="modal5-content" class="modal-content">
+                        <span class="close">&times;</span>
+                        <img src="./res/05-1/Group 62.png">
+                    </div>
+                </section>
             </main>
         </div>
     </body>
-    <script src="./app.js"></script>
+    <script src="./code/app.js"></script>
 </html>

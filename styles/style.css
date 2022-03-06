@@ -2,7 +2,23 @@
   padding: 0px;
   margin: 0px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  visibility: hidden;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+section.active {
+  visibility: visible;
 }
 
 .click {
@@ -21,7 +37,7 @@ img {
   max-height: 100%;
 }
 
-div.left1 {
+div #left1 {
   top: 434px;
   position: absolute;
   display: table-cell;
@@ -34,7 +50,7 @@ div.right1 {
   left: 33.23%;
 }
 
-div.left2 {
+div #left2 {
   top: 434px;
   position: absolute;
   display: table-cell;
@@ -47,7 +63,7 @@ div.right2 {
   left: 33.23%;
 }
 
-div.left3 {
+div #left3 {
   top: 434px;
   position: absolute;
   display: table-cell;
@@ -60,7 +76,7 @@ div.right3 {
   left: 33.23%;
 }
 
-div.left4 {
+div #left4 {
   top: 434px;
   position: absolute;
   display: table-cell;
@@ -73,7 +89,7 @@ div.right4 {
   left: 33.23%;
 }
 
-div.left5 {
+div #left5 {
   top: 434px;
   position: absolute;
   display: table-cell;
@@ -135,97 +151,59 @@ div.navbar {
   left: 93.59%;
 }
 
-.left1 #ceremony_ {
+#left1 #ceremony_ {
+  padding-top: 12px;
   background-color: white;
   display: block;
   position: relative;
   z-index: 1;
 }
 
-.left1 #ceremony_:hover {
+#left1 #ceremony_:hover {
   -webkit-transform: scale(1.2, 1.2);
-          transform: scale(1.2, 1.2);
-  -webkit-transition: all 0.6s ease;
-  transition: all 0.6s ease;
+  transform: scale(1.2, 1.2);
+  -webkit-transition: all 0.18s ease;
+  transition: all 0.18s ease;
 }
 
-.left1 #original {
+#left1 #original {
   display: block;
   position: relative;
   padding-top: 18px;
 }
 
-.left1 #light {
+#left1 #light {
   display: block;
   position: relative;
   padding-top: 18px;
 }
 
-.left1 #nightnight {
+#left1 #nightnight {
   display: block;
   position: relative;
   padding-top: 18px;
 }
 
-.left1 #housework {
+#left1 #housework {
   display: block;
   position: relative;
   padding-top: 18px;
 }
 
-.left2 #ceremony {
+#left2 #ceremony {
   display: block;
   position: relative;
   padding-bottom: 12px;
 }
 
-.left2 #original_:hover {
+#left2 #original_:hover {
   -webkit-transform: scale(1.2, 1.2);
-          transform: scale(1.2, 1.2);
-  -webkit-transition: all 0.6s ease;
-  transition: all 0.6s ease;
+  transform: scale(1.2, 1.2);
+  -webkit-transition: all 0.18s ease;
+  transition: all 0.18s ease;
 }
 
-.left2 #original_ {
-  background-color: white;
-  z-index: 1;
-  display: block;
-  position: relative;
-  padding-top: 18px;
-}
-
-.left2 #light {
-  display: block;
-  position: relative;
-  padding-top: 18px;
-}
-
-.left2 #nightnight {
-  display: block;
-  position: relative;
-  padding-top: 18px;
-}
-
-.left2 #housework {
-  display: block;
-  position: relative;
-  padding-top: 18px;
-}
-
-.left3 #ceremony {
-  display: block;
-  position: relative;
-  padding-bottom: 12px;
-}
-
-.left3 #light_:hover {
-  -webkit-transform: scale(1.2, 1.2);
-          transform: scale(1.2, 1.2);
-  -webkit-transition: all 0.6s ease;
-  transition: all 0.6s ease;
-}
-
-.left3 #original {
+#left2 #original_ {
   background-color: white;
   z-index: 1;
   display: block;
@@ -233,50 +211,90 @@ div.navbar {
   padding-top: 18px;
 }
 
-.left3 #light_ {
+#left2 #light {
   display: block;
   position: relative;
   padding-top: 18px;
 }
 
-.left3 #nightnight {
+#left2 #nightnight {
   display: block;
   position: relative;
   padding-top: 18px;
 }
 
-.left3 #housework {
+#left2 #housework {
   display: block;
   position: relative;
   padding-top: 18px;
 }
 
-.left4 #ceremony {
+#left3 #ceremony {
   display: block;
   position: relative;
+  padding-bottom: 12px;
 }
 
-.left4 #nightnight_:hover {
+#left3 #light_:hover {
   -webkit-transform: scale(1.2, 1.2);
-          transform: scale(1.2, 1.2);
-  -webkit-transition: all 0.6s ease;
-  transition: all 0.6s ease;
+  transform: scale(1.2, 1.2);
+  -webkit-transition: all 0.18s ease;
+  transition: all 0.18s ease;
 }
 
-.left4 #original {
+#left3 #original {
+  display: block;
+  position: relative;
+  padding-top: 6px;
+  padding-bottom: 19px;
+}
+
+#left3 #light_ {
+  display: block;
+  position: relative;
+  z-index: 1;
+  padding-top: 18px;
+  width: 95%;
+}
+
+#left3 #nightnight {
   display: block;
   position: relative;
   padding-top: 18px;
 }
 
-.left4 #light {
+#left3 #housework {
+  display: block;
+  position: relative;
+  padding-top: 18px;
+}
+
+#left4 #ceremony {
+  display: block;
+  position: relative;
+}
+
+#left4 #nightnight_:hover {
+  -webkit-transform: scale(1.2, 1.2);
+  transform: scale(1.2, 1.2);
+  -webkit-transition: all 0.18s ease;
+  transition: all 0.18s ease;
+}
+
+#left4 #original {
+  display: block;
+  position: relative;
+  padding-top: 18px;
+}
+
+#left4 #light {
   display: block;
   position: relative;
   padding-top: 18px;
   padding-bottom: 12px;
 }
 
-.left4 #nightnight_ {
+#left4 #nightnight_ {
   background-color: white;
   z-index: 1;
   display: block;
@@ -284,44 +302,44 @@ div.navbar {
   padding-top: 18px;
 }
 
-.left4 #housework {
+#left4 #housework {
   display: block;
   position: relative;
   padding-top: 18px;
 }
 
-.left5 #ceremony {
+#left5 #ceremony {
   display: block;
   position: relative;
 }
 
-.left5 #housework_:hover {
+#left5 #housework_:hover {
   -webkit-transform: scale(1.2, 1.2);
-          transform: scale(1.2, 1.2);
-  -webkit-transition: all 0.6s ease;
-  transition: all 0.6s ease;
+  transform: scale(1.2, 1.2);
+  -webkit-transition: all 0.18s ease;
+  transition: all 0.18s ease;
 }
 
-.left5 #original {
+#left5 #original {
   display: block;
   position: relative;
   padding-top: 18px;
 }
 
-.left5 #light {
+#left5 #light {
   display: block;
   position: relative;
   padding-top: 18px;
 }
 
-.left5 #nightnight {
+#left5 #nightnight {
   display: block;
   position: relative;
   padding-top: 18px;
   padding-bottom: 12px;
 }
 
-.left5 #housework_ {
+#left5 #housework_ {
   background-color: white;
   z-index: 1;
   display: block;
@@ -445,8 +463,8 @@ div.navbar {
 #myImg {
   border-radius: 5px;
   cursor: pointer;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 0.18s;
+  transition: 0.18s;
 }
 
 #myImg:hover {
@@ -502,30 +520,30 @@ div.navbar {
 .modal-content,
 #caption {
   -webkit-animation-name: zoom;
-          animation-name: zoom;
-  -webkit-animation-duration: 0.6s;
-          animation-duration: 0.6s;
+  animation-name: zoom;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
 }
 
 @-webkit-keyframes zoom {
   from {
     -webkit-transform: scale(0);
-            transform: scale(0);
+    transform: scale(0);
   }
   to {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
 }
 
 @keyframes zoom {
   from {
     -webkit-transform: scale(0);
-            transform: scale(0);
+    transform: scale(0);
   }
   to {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
 }
 
@@ -537,8 +555,8 @@ div.navbar {
   color: #f1f1f1;
   font-size: 40px;
   font-weight: bold;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 0.18s;
+  transition: 0.18s;
 }
 
 .close:hover,
