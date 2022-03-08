@@ -2,12 +2,15 @@ let sections = document.getElementsByTagName('section');
 
 let temp=0;
 let modal = document.querySelectorAll(".modal");
+let modalcontnet = document.querySelectorAll(".modal-content");
 let btn = document.querySelectorAll(".click");
-let span = document.querySelectorAll(".close");
+$('body').toggleClass('notransition');
+// let span = document.querySelectorAll(".close");
 // tracks index of current section
 let currentSectionIndex = 0;
 //updateADD();
 document.addEventListener('wheel', e => {
+  modal[currentSectionIndex].style.display = "none";
   if (e.wheelDeltaY > 0 && currentSectionIndex - 1 >= 0) {
     // wheel up
     sections[currentSectionIndex].className = '';
@@ -46,16 +49,16 @@ document.addEventListener('wheel', e => {
 // }
 for (i=0;i<modal.length;i++){
   btn[i].onclick = btnClick;
-  span[i].onclick = spanClick;
+  // span[i].onclick = spanClick;
 }
 
 function btnClick() {
   modal[currentSectionIndex].style.display = "block";
 }
 
-function spanClick(){
-  modal[currentSectionIndex].style.display = "none";
-}
+// function spanClick(){
+//   modal[currentSectionIndex].style.display = "none";
+// }
 
 window.onclick = function(event){
   if (event.target == modal[currentSectionIndex]) {

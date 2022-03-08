@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+span {
+  display: none;
+}
+
 section {
   width: 100vw;
   height: 100vh;
@@ -24,10 +28,6 @@ section.active {
   cursor: pointer;
 }
 
-div {
-  display: flex;
-}
-
 img {
   vertical-align: top;
   max-width: 100%;
@@ -35,121 +35,169 @@ img {
 }
 
 div #left1 {
-  top: 434px;
-  position: absolute;
+  top: 42vh;
+  position: relative;
   display: table-cell;
-  left: 6.67%;
+  left: 6.67vw;
+  width: 36vw;
 }
 
 div.right1 {
   position: absolute;
-  top: 256px;
-  left: 33.23%;
+  display: flex;
+  top: 22vh;
+  left: 33.23vw;
+  width: 60vw;
 }
 
 div #left2 {
-  top: 434px;
-  position: absolute;
+  top: 42vh;
+  position: relative;
   display: table-cell;
-  left: 6.67%;
+  left: 6.67vw;
+  width: 33.8vw;
 }
 
 div.right2 {
   position: absolute;
-  top: 256px;
-  left: 33.23%;
+  display: flex;
+  top: 22vh;
+  left: 33.23vw;
+  width: 60vw;
 }
 
 div #left3 {
-  top: 434px;
-  position: absolute;
+  top: 42vh;
+  position: relative;
   display: table-cell;
-  left: 6.67%;
+  left: 6.67vw;
+  width: 38vw;
 }
 
 div.right3 {
   position: absolute;
-  top: 256px;
-  left: 33.23%;
+  display: flex;
+  top: 22vh;
+  left: 33.23vw;
+  width: 60vw;
 }
 
 div #left4 {
-  top: 434px;
-  position: absolute;
+  top: 42vh;
+  position: relative;
   display: table-cell;
-  left: 6.67%;
+  left: 6.67vw;
+  width: 38vw;
 }
 
 div.right4 {
   position: absolute;
-  top: 256px;
-  left: 33.23%;
+  display: flex;
+  top: 22vh;
+  left: 33.23vw;
+  width: 60vw;
 }
 
 div #left5 {
-  top: 434px;
-  position: absolute;
+  top: 42vh;
+  position: relative;
   display: table-cell;
-  left: 6.67%;
+  left: 6.67vw;
+  width: 38vw;
 }
 
 div.right5 {
   position: absolute;
-  top: 256px;
-  left: 33.23%;
+  display: flex;
+  top: 22vh;
+  left: 33.23vw;
+  width: 60vw;
+}
+nav ::after {
+  font-size: 0;
+  content: "";
+  clear: both;
+  display: table;
+  position: sticky;
+  min-width: 90vw;
+  width: 100vw;
 }
 
-div.navbar {
-  font-size: 0;
-  position: absolute;
-  display: inline-block;
-  min-width: 100%;
+nav.navbar {
+  margin-top: 3vh;
+  width: 100vw;
 }
 
 .navleft {
-  position: absolute;
-  display: inline-block;
-  top: 36px;
-  bottom: 36px;
-  left: 3.54%;
+  left: 3vw;
+  float: left;
+  position: sticky;
+  width: 3vw;
 }
 
 .navright {
-  position: absolute;
-  top: 44px;
-  bottom: 36px;
+  margin-top: 1vh;
+  float: left;
+  position: sticky;
+  left: 15vw;
 }
 
 #name {
-  left: 8.125%;
+  left: 8vw;
+  width: 12vw;
 }
 
 #product {
-  left: 49.69%;
+  width: 4.8vw;
+  left: 49.69vw;
 }
 
 #place {
-  left: 58.96%;
+  width: 3.2vw;
+  left: 58.96vw;
 }
 
 #inspiration {
-  left: 65.78%;
+  width: 9vw;
+  left: 65.78vw;
 }
 
 #new {
-  left: 79.17%;
+  width: 2.5vw;
+  left: 79.17vw;
 }
 
 #discount {
-  left: 85.93%;
+  width: 5.4vw;
+  left: 85.93vw;
 }
 
 #shoppingcart {
-  left: 93.59%;
+  width: 1.9vw;
+  left: 93.89vw;
+}
+
+#ceremony {
+  width: 6.4vw;
+}
+
+#original {
+  width: 6.2vw;
+}
+
+#light {
+  width: 3.6vw;
+}
+
+#nightnight {
+  width: 7vw;
+}
+
+#housework {
+  width: 7vw;
 }
 
 #left1 #ceremony_ {
-  padding-top: 12px;
   background-color: white;
   display: block;
   position: relative;
@@ -164,31 +212,31 @@ div.navbar {
 #left1 #original {
   display: block;
   position: relative;
-  padding-top: 18px;
+  padding-top: 2.7vh;
 }
 
 #left1 #light {
   display: block;
   position: relative;
-  padding-top: 18px;
+  padding-top: 2vh;
 }
 
 #left1 #nightnight {
   display: block;
   position: relative;
-  padding-top: 18px;
+  padding-top: 2vh;
 }
 
 #left1 #housework {
   display: block;
   position: relative;
-  padding-top: 18px;
+  padding-top: 2vh;
 }
 
 #left2 #ceremony {
   display: block;
   position: relative;
-  padding-bottom: 12px;
+  padding-bottom: 2vh;
 }
 
 #left2 #original_:hover {
@@ -201,31 +249,30 @@ div.navbar {
   z-index: 1;
   display: block;
   position: relative;
-  padding-top: 18px;
 }
 
 #left2 #light {
   display: block;
   position: relative;
-  padding-top: 18px;
+  padding-top: 2vh;
 }
 
 #left2 #nightnight {
   display: block;
   position: relative;
-  padding-top: 18px;
+  padding-top: 2vh;
 }
 
 #left2 #housework {
   display: block;
   position: relative;
-  padding-top: 18px;
+  padding-top: 2vh;
 }
 
 #left3 #ceremony {
   display: block;
   position: relative;
-  padding-bottom: 12px;
+  padding-bottom: 1vh;
 }
 
 #left3 #light_:hover {
@@ -236,28 +283,29 @@ div.navbar {
 #left3 #original {
   display: block;
   position: relative;
-  padding-top: 6px;
-  padding-bottom: 19px;
+  padding-top: 1vh;
 }
 
 #left3 #light_ {
   display: block;
   position: relative;
   z-index: 1;
-  padding-top: 18px;
-  width: 95%;
+  width: 24vw;
+  padding-top: 1vh;
+  padding-bottom: 2vh;
 }
 
 #left3 #nightnight {
   display: block;
   position: relative;
-  padding-top: 18px;
+  padding-top: 1.8vh;
 }
 
 #left3 #housework {
   display: block;
   position: relative;
-  padding-top: 18px;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
 }
 
 #left4 #ceremony {
@@ -273,14 +321,14 @@ div.navbar {
 #left4 #original {
   display: block;
   position: relative;
-  padding-top: 18px;
+  padding-top: 2vh;
 }
 
 #left4 #light {
   display: block;
   position: relative;
-  padding-top: 18px;
-  padding-bottom: 12px;
+  padding-top: 2vh;
+  padding-bottom: 1vh;
 }
 
 #left4 #nightnight_ {
@@ -288,13 +336,17 @@ div.navbar {
   z-index: 1;
   display: block;
   position: relative;
-  padding-top: 18px;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
 }
 
 #left4 #housework {
   display: block;
   position: relative;
-  padding-top: 18px;
+  top: 0.4vh;
+  padding-top: 2.1vh;
+  padding-bottom: 2vh;
+  width: 7vw;
 }
 
 #left5 #ceremony {
@@ -310,20 +362,20 @@ div.navbar {
 #left5 #original {
   display: block;
   position: relative;
-  padding-top: 18px;
+  padding-top: 2vh;
 }
 
 #left5 #light {
   display: block;
   position: relative;
-  padding-top: 18px;
+  padding-top: 2vh;
 }
 
 #left5 #nightnight {
   display: block;
   position: relative;
-  padding-top: 18px;
-  padding-bottom: 12px;
+  padding-top: 2vh;
+  padding-bottom: 1vh;
 }
 
 #left5 #housework_ {
@@ -331,119 +383,124 @@ div.navbar {
   z-index: 1;
   display: block;
   position: relative;
-  padding-top: 18px;
+  padding-top: 2vh;
+  padding-bottom: 1vh;
 }
 
 #text {
   display: block;
-  position: relative;
-  padding-top: 90px;
+  width: 25%;
+  left: 7vw;
+  position: absolute;
+  top: 87vh;
 }
 
 .scroll {
-  left: 96.75%;
+  top: 10vh;
+  left: 58vw;
+  width: 0.5vw;
   position: absolute;
   z-index: 1;
 }
 
 .right1 #scroll1 {
-  top: 279px;
+  top: 26vh;
 }
 
 .right1 #scroll2 {
-  top: 332px;
+  top: 32.5vh;
 }
 
 .right1 #scroll3 {
-  top: 350px;
+  top: 35vh;
 }
 
 .right1 #scroll4 {
-  top: 368px;
+  top: 37.5vh;
 }
 
 .right1 #scroll5 {
-  top: 386px;
+  top: 40vh;
 }
 
 .right2 #scroll1 {
-  top: 279px;
+  top: 26vh;
 }
 
 .right2 #scroll2 {
-  top: 297px;
+  top: 28.5vh;
 }
 
 .right2 #scroll3 {
-  top: 350px;
+  top: 35vh;
 }
 
 .right2 #scroll4 {
-  top: 368px;
+  top: 37.5vh;
 }
 
 .right2 #scroll5 {
-  top: 386px;
+  top: 40vh;
 }
 
 .right3 #scroll1 {
-  top: 279px;
+  top: 26vh;
 }
 
 .right3 #scroll2 {
-  top: 297px;
+  top: 28.5vh;
 }
 
 .right3 #scroll3 {
-  top: 315px;
+  top: 31vh;
 }
 
 .right3 #scroll4 {
-  top: 368px;
+  top: 37.5vh;
 }
 
 .right3 #scroll5 {
-  top: 386px;
+  top: 40vh;
 }
 
 .right4 #scroll1 {
-  top: 279px;
+  top: 26vh;
 }
 
 .right4 #scroll2 {
-  top: 297px;
+  top: 28.5vh;
 }
 
 .right4 #scroll3 {
-  top: 315px;
+  top: 31vh;
 }
 
 .right4 #scroll4 {
-  top: 333px;
+  top: 33.5vh;
 }
 
 .right4 #scroll5 {
-  top: 386px;
+  top: 40vh;
 }
 
 .right5 #scroll1 {
-  top: 279px;
+  top: 26vh;
 }
 
 .right5 #scroll2 {
-  top: 297px;
+  top: 28.5vh;
 }
 
 .right5 #scroll3 {
-  top: 315px;
+  top: 31vh;
 }
 
 .right5 #scroll4 {
-  top: 333px;
+  top: 33.5vh;
 }
 
 .right5 #scroll5 {
-  top: 351px;
+  top: 36vh;
 }
 
 /* Style the Image Used to Trigger the Modal */
@@ -462,13 +519,13 @@ div.navbar {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 300px; /* Location of the box */
-  padding-left: 330px;
+  padding-top: 20vh; /* Location of the box */
+  padding-left: 16vw;
   left: 0;
   top: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
+  //overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0, 0, 0); /* Fallback color */
   background-color: rgba(145, 143, 143, 0.108); /* Black w/ opacity */
 }
@@ -477,20 +534,21 @@ div.navbar {
 .modal-content {
   margin: 0px;
   display: block;
-  width: 100%;
-  max-width: 80%;
+  width: 10vw;
+  max-width: 80vw;
+  min-width: 80%;
 }
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
 #caption {
   margin: auto;
   display: block;
-  width: 80%;
-  max-width: 700px;
+  width: 50%;
+  max-width: 80vw;
   text-align: center;
   color: #ccc;
   padding: 10px 0;
-  height: 150px;
+  height: 10vh;
 }
 
 /* Add Animation - Zoom in the Modal */
@@ -536,4 +594,12 @@ div.navbar {
 
 .ui-dialog-titlebar-close {
   visibility: hidden;
+}
+
+.notransition * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  -ms-transition: none !important;
+  transition: none !important;
 }
